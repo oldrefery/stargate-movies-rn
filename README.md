@@ -1,4 +1,5 @@
 # StarGate movies
+[![Maintainability](https://api.codeclimate.com/v1/badges/13f8f8f8da9f5b68d7cc/maintainability)](https://codeclimate.com/github/oldrefery/stargate-movies-rn/maintainability)
 
 Simple React Native app with posters, names of Stargate movies
 
