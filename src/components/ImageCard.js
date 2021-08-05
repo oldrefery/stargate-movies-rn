@@ -8,9 +8,7 @@ const ImageCard = ({movie}) => {
       <View style={styles.poster}>
         <Image source={{uri: movie.image}} style={styles.image} />
       </View>
-      <Text style={styles.title}>
-        {movie.name} ({movie.year})
-      </Text>
+      <Text style={styles.title}>{movie.name.toUpperCase()}</Text>
     </View>
   );
 };
@@ -22,6 +20,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     textAlign: 'center',
     width: width / 2.4,
+    marginTop: 10,
   },
   image: {
     width: width / 2.4,

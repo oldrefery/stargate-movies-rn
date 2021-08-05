@@ -34,6 +34,7 @@ const App = () => {
         numColumns={2}
         contentContainerStyle={styles.list}
         columnWrapperStyle={styles.columnList}
+        showsVerticalScrollIndicator={false}
       />
     </View>
   );
