@@ -25,5 +25,8 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "resolutions": {
+    "@babel/plugin-transform-react-display-name": "7.14.5"
   }
 }
