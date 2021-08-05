@@ -3,19 +3,29 @@ import {SafeAreaView, StatusBar, StyleSheet, Text, View} from 'react-native';
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.container}>
-        <Text>Welcome to React Native</Text>
-      </View>
-    </SafeAreaView>
+    <View style={styles.container}>
+      <Text style={styles.title}>STAR GATE</Text>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
+    backgroundColor: '#30D0FE',
+    height: 116,
     justifyContent: 'center',
-    flex: 1,
+    paddingTop: 71,
+    paddingLeft: 22,
+    shadowColor: 'black',
+    shadowOffset: {width: 0, height: 2},
+    shadowOpacity: 0.2,
+    elevation: 2,
+    position: 'relative',
+  },
+  title: {
+    fontSize: 28,
+    color: 'white',
+    fontFamily: 'AvenirNext-DemiBold',
   },
 });
 
