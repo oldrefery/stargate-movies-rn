@@ -14,13 +14,9 @@ const App = () => {
       .catch(error => console.log(error.message));
   }, []);
 
-  const keyExtractor = item => {
-    return `id-${item.id}`;
-  };
+  const keyExtractor = item => `id-${item.id}`;
 
-  const renderItem = ({item}) => {
-    return <ImageCard movie={item} />;
-  };
+  const renderItem = ({item}) => <ImageCard movie={item} />;
 
   return (
     <View>
