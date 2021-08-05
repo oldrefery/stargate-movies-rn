@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {FlatList, View} from 'react-native';
+import {FlatList, StyleSheet, View} from 'react-native';
 
 import {ImageCard, Header} from './src/components';
 
@@ -31,9 +31,21 @@ const App = () => {
         data={movies}
         renderItem={renderItem}
         keyExtractor={keyExtractor}
+        numColumns={2}
+        contentContainerStyle={styles.list}
+        columnWrapperStyle={styles.columnList}
       />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  list: {
+    paddingBottom: 150,
+  },
+  columnList: {
+    justifyContent: 'space-evenly',
+  },
+});
 
 export default App;
