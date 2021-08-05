@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {FlatList, Text, View} from 'react-native';
+import {FlatList, View} from 'react-native';
 
-import Header from './src/components/Header';
-import ImageCard from './src/components/ImageCard';
+import {ImageCard, Header} from './src/components';
 
 const url =
   'https://s3.eu-central-1.wasabisys.com/ghashtag/RNForKids/00-Init/data.json';
